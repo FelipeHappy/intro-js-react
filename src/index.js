@@ -1,17 +1,52 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+console.log('Hola React')
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//Variables y Constantes
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const nombre = 'Cristobal';
+// const apellido = 'Perez'
+
+// let valorDado = 5;
+// valorDado = 4;
+
+// console.log(nombre,apellido, valorDado)
+
+// if(true){
+//     const nombre = 'Giselle';
+//     let valorDadoXD = 10;
+
+//     console.log( nombre, valorDadoXD)
+// }
+//////////////////////////////////////////////////
+//Template String
+// const nombre = 'Cristobal';
+// const seudonimo = 'Toli'
+
+// const nombre_completo = `${nombre} ${seudonimo}`
+
+// console.log(nombre_completo);
+
+// function getSaludo(nombre){
+//     return `Hola mundo ${nombre}`
+// }
+
+// console.log(`Este es un texto: ${getSaludo(nombre)}`)
+///////////////////////////////////////////////////
+
+const persona = {
+    nombre: 'Cristobal',
+    edad: 22,
+    seudonimo: 'Toli',
+    relacion: 'En pareja',
+    direccion: {
+        ciudad: 'York New',
+        zip: 551,
+        lat: 14.1213,
+        lng: 34.3264
+    }
+};
+
+console.log(persona);
+
+const persona2 = persona;
+persona2.nombre = 'Tola';
+console.log(persona2)
